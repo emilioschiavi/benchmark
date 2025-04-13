@@ -21,5 +21,5 @@ FetchContent_MakeAvailable(
 )
 
 add_executable(main main.cpp)
-target_compile_options(main PRIVATE -std=c++17 -Wall -Wextra)
+target_compile_options(main PRIVATE -std=c++17 -Wall -Wextra -O3)
 target_link_libraries(main PRIVATE benchmark::benchmark)
